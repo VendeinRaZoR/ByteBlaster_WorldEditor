@@ -1,0 +1,201 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bitmap1.bmp"
+IDR_TOOLBAR1            BITMAP                  "toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON40001
+    BUTTON      ID_BUTTON40004
+    BUTTON      ID_BUTTON40024
+    BUTTON      ID_BUTTON40009
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New",                         ID_FILE_NEW40005
+        MENUITEM "Open",                        ID_FILE_OPEN40006
+        POPUP "Export"
+        BEGIN
+            MENUITEM "*.Obj",                       ID_EXPORT_OBJ
+            MENUITEM "*.X",                         ID_EXPORT_X
+            MENUITEM "*.3ds",                       ID_EXPORT_
+        END
+        MENUITEM "Save",                        ID_FILE_SAVE40015
+        MENUITEM "Save As",                     ID_FILE_SAVEAS
+        MENUITEM "Close",                       ID_FILE_CLOSE40010
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Terrain"
+    BEGIN
+        POPUP "RenderMode"
+        BEGIN
+            MENUITEM "Grid",                        ID_RENDERMODE_GRID, CHECKED
+        END
+    END
+    POPUP "About"
+    BEGIN
+        MENUITEM "Help",                        ID_ABOUT_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 127, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Terrain Config"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    EDITTEXT        IDC_EDIT1,29,29,67,14,ES_AUTOHSCROLL
+    LTEXT           "Terrain Level",IDC_STATIC,30,18,54,10
+    PUSHBUTTON      "Cancel",IDC_BUTTON1,70,181,50,14
+    PUSHBUTTON      "OK",IDC_BUTTON2,7,181,50,14
+    GROUPBOX        "Terrain Config",IDC_STATIC,7,7,113,81
+    LTEXT           "Water Level",IDC_STATIC,31,44,38,8
+    EDITTEXT        IDC_EDIT2,29,56,68,14,ES_AUTOHSCROLL
+    GROUPBOX        "Terrain Size",IDC_STATIC,7,93,113,71
+    EDITTEXT        IDC_EDIT3,18,115,33,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,56,119,8,8
+    EDITTEXT        IDC_EDIT4,66,115,30,14,ES_AUTOHSCROLL
+    LTEXT           "Terrain Size",IDC_STATIC,19,104,39,8
+    LTEXT           "Cell Size",IDC_STATIC,18,132,28,8
+    EDITTEXT        IDC_EDIT5,19,143,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOGEX 500, 200, 121, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_OVERLAPPEDWINDOW | WS_EX_TOOLWINDOW
+CAPTION "ToolBox"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Brush",IDC_STATIC,7,7,107,88
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,14,28,93,15
+    LTEXT           "Radius",IDC_STATIC,25,18,22,8
+    LTEXT           "Straight",IDC_STATIC,23,47,26,8
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,15,59,89,15
+    GROUPBOX        "Camera Speed",IDC_STATIC,7,95,107,66
+    LTEXT           "Camera Speed",IDC_STATIC,16,108,48,8
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,15,128,92,15
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
