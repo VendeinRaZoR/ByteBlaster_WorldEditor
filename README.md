@@ -2,4 +2,4 @@
 
 **Краткое описание**
 
-**ByteBlaster World Editor ** 
+**ByteBlaster World Editor v0.1 Pre Alpha** представляет собой  
