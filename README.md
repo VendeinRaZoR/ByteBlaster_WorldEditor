@@ -1,4 +1,4 @@
-﻿# ByteBlaster World Editor (2012-2014 годов разработки)
+﻿# ByteBlaster World Editor (2012-2013 годов разработки)
 
 **Краткое описание**
 
